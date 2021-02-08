@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="100">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <logicalFolder name="HeaderFiles"
+                   displayName="Header Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="include" displayName="include" projectFiles="true">
+      <logicalFolder name="crypt" displayName="crypt" projectFiles="true">
+        <logicalFolder name="crc32" displayName="crc32" projectFiles="true">
+          <itemPath>include/crypt/crc32/crc32.c</itemPath>
+          <itemPath>include/crypt/crc32/crc32.h</itemPath>
+        </logicalFolder>
+        <itemPath>include/crypt/md5.c</itemPath>
+        <itemPath>include/crypt/md5.h</itemPath>
+      </logicalFolder>
+      <logicalFolder name="util" displayName="util" projectFiles="true">
+        <itemPath>include/util/buf.c</itemPath>
+        <itemPath>include/util/buf.h</itemPath>
+        <itemPath>include/util/lock.cpp</itemPath>
+        <itemPath>include/util/lock.h</itemPath>
+        <itemPath>include/util/util_filesys.cpp</itemPath>
+        <itemPath>include/util/util_filesys.h</itemPath>
+        <itemPath>include/util/util_string.cpp</itemPath>
+        <itemPath>include/util/util_string.h</itemPath>
+      </logicalFolder>
+      <itemPath>include/global.cpp</itemPath>
+      <itemPath>include/global.h</itemPath>
+      <itemPath>include/rand_generate.cpp</itemPath>
+      <itemPath>include/rand_generate.h</itemPath>
+      <itemPath>include/textcolor.c</itemPath>
+      <itemPath>include/textcolor.h</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ResourceFiles"
+                   displayName="Resource Files"
+                   projectFiles="true">
+    </logicalFolder>
+    <logicalFolder name="SourceFiles"
+                   displayName="Source Files"
+                   projectFiles="true">
+      <itemPath>main.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="TestFiles"
+                   displayName="Test Files"
+                   projectFiles="false"
+                   kind="TEST_LOGICAL_FOLDER">
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>Makefile</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceRootList>
+    <Elem>include</Elem>
+  </sourceRootList>
+  <projectmakefile>Makefile</projectmakefile>
+  <confs>
+    <conf name="Debug" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <linkerTool>
+          <commandLine>-pthread</commandLine>
+        </linkerTool>
+      </compileType>
+      <item path="include/crypt/crc32/crc32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/crypt/crc32/crc32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/crypt/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/crypt/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/global.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/rand_generate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/rand_generate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/textcolor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/textcolor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/buf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/util/buf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/lock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/util/lock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/util_filesys.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/util/util_filesys.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/util_string.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/util/util_string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+    <conf name="Release" type="1">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>true</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <compileType>
+        <cTool>
+          <developmentMode>5</developmentMode>
+        </cTool>
+        <ccTool>
+          <developmentMode>5</developmentMode>
+        </ccTool>
+        <fortranCompilerTool>
+          <developmentMode>5</developmentMode>
+        </fortranCompilerTool>
+        <asmTool>
+          <developmentMode>5</developmentMode>
+        </asmTool>
+      </compileType>
+      <item path="include/crypt/crc32/crc32.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/crypt/crc32/crc32.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/crypt/md5.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/crypt/md5.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/global.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/global.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/rand_generate.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/rand_generate.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/textcolor.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/textcolor.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/buf.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="include/util/buf.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/lock.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/util/lock.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/util_filesys.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/util/util_filesys.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="include/util/util_string.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="include/util/util_string.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="main.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+    </conf>
+  </confs>
+</configurationDescriptor>
