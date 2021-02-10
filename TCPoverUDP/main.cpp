@@ -797,7 +797,16 @@ ReadCommand* _readCommand(UdpRcvSocket_READER* _item)
     int offset_1               = 0;
     struct buf* encode_byffer  = NULL;
     
-    res = new ReadCommand();
+    
+    try
+    {
+        res = new ReadCommand();
+    }
+    catch (std::bad_alloc& ba)
+    {
+        return NULL;
+    }
+    
     res->udp_info = _item;
 
     if( offset_1 + 4 > _item->buf_len )
@@ -1026,7 +1035,7 @@ void *thread_worker(void *arg)
             
             ReadCommand *parse = _readCommand(_item);
             
-            if(parse->init_ok)
+            if(parse != NULL && parse->init_ok)
             {
                 __LOCK_READ(&rwlock_session_users, __LINE__, __FUNCTION__);
 
